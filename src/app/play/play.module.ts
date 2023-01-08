@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DashboardComponent } from './dashboard.component';
-import { DashboardHeaderComponent } from './dashboard-header/dashboard-header.component';
+import { PlayComponent } from './play.component';
+import { HeaderComponent } from './header/header.component';
 import { UIModule } from '../shared/modules/ui/ui.module';
 import { RouterModule } from '@angular/router';
 
+
+
 @NgModule({
   declarations: [
-    DashboardComponent,
-    DashboardHeaderComponent
+    PlayComponent,
+    HeaderComponent
   ],
   imports: [
     CommonModule,
@@ -16,10 +18,9 @@ import { RouterModule } from '@angular/router';
     RouterModule.forChild([
       {
         path: '',
-        component: DashboardComponent
-      },
-
+        component: PlayComponent
+      }
     ])
   ]
 })
-export class DashboardModule { }
+export class PlayModule { }

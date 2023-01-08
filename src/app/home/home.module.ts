@@ -1,14 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LeaderboardComponent } from './leaderboard.component';
-import { UIModule } from '../shared/modules/ui/ui.module';
 import { RouterModule } from '@angular/router';
-
-
+import { HomeComponent } from './home.component';
+import { UIModule } from '../shared/modules/ui/ui.module';
 
 @NgModule({
   declarations: [
-    LeaderboardComponent
+    HomeComponent
   ],
   imports: [
     CommonModule,
@@ -16,12 +14,9 @@ import { RouterModule } from '@angular/router';
     RouterModule.forChild([
       {
         path: '',
-        component: LeaderboardComponent
+        component: HomeComponent
       }
     ])
-  ],
-  exports:[
-    LeaderboardComponent
   ]
 })
-export class LeaderboardModule { }
+export class HomeModule { }

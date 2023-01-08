@@ -1,27 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LeaderboardComponent } from './leaderboard.component';
-import { UIModule } from '../shared/modules/ui/ui.module';
+import { ProfileComponent } from './profile.component';
 import { RouterModule } from '@angular/router';
-
 
 
 @NgModule({
   declarations: [
-    LeaderboardComponent
+    ProfileComponent
   ],
   imports: [
     CommonModule,
-    UIModule,
     RouterModule.forChild([
       {
         path: '',
-        component: LeaderboardComponent
+        component: ProfileComponent
       }
     ])
-  ],
-  exports:[
-    LeaderboardComponent
   ]
 })
-export class LeaderboardModule { }
+export class ProfileModule { }
