@@ -1,0 +1,27 @@
+<div class="play-wrapper" *ngIf="activeTrivia">
+    <app-header 
+        [wrongAnswerCounter]="wrongAnswerCounter" 
+        [email]="email"
+        [score]="correctAnswersCounter"></app-header>
+
+    <div class="play-field">
+        <h3>What does this word mean?</h3>
+        <br>
+        <h1>{{activeTrivia.word}}</h1>
+    </div>
+
+    <div class="options-wrapper">
+        <button 
+            mat-button 
+            mat-raised-button
+            color="primary" *ngFor="let item of activeTrivia.options" 
+            (click)="selectAnswer(item)">
+            {{item.definition}}
+        </button>
+    </div>
+
+</div>
+
+<div *ngIf="!activeTrivia">
+    Loading..
+</div>

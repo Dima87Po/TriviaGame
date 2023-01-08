@@ -1,0 +1,30 @@
+.play-field {
+  margin: 10px;
+}
+
+.answers {
+  background-color: orange;
+  margin: 10px;
+  display: block;
+}
+
+input {
+  margin: 30px;
+  width: 30%;
+}
+
+.submitBtn {
+  position: absolute;
+  width: 90%;
+  margin: 20px;
+}
+
+.options-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  button {
+    margin-bottom: 10px;
+    padding: 30px;
+  }
+}

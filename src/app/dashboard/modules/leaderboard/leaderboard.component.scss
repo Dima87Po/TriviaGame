@@ -1,0 +1,22 @@
+table,
+.top-players {
+  td {
+    width: 150px;
+  }
+}
+
+.table-players {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  th {
+    background-color: aquamarine;
+    border: 1px solid;
+    padding: 15px 25px;
+  }
+
+  td {
+    border: 1px solid;
+    padding: 15px 25px;
+  }
+}

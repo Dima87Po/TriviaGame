@@ -1,0 +1,13 @@
+:host {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: bisque;
+
+        .active-link {
+            background-color: red;
+            color: white
+        }
+    }
+}

@@ -1,28 +1,30 @@
-<p>dashboard-header works!</p>
-<button 
-    mat-raised-button 
-    color="primary" 
-    [routerLink]="['/gameplay']"
->
-    Play 
-</button>
-
-<button 
-    mat-raised-button 
-    color="primary" 
-    [routerLink]="['/leaderboard']"
->
-    Leaerboard 
-</button>
+<div class="header">
+    <div class="logo">
+        World Trivia Game
+    </div>
 
 
-<button 
-    mat-raised-button 
-    color="primary" 
-    [routerLink]="['/profile']"
->
-    Profile 
-</button>
+    <button mat-raised-button color="basic" routerLinkActive="active-link" [routerLink]="['']">
+        HOME
+    </button>
+    
+    <button mat-raised-button color="primary"  routerLinkActive="active-link" [routerLink]="['gameplay']">
+        Play
+    </button>
 
 
-Logout
+    <button mat-raised-button color="primary" routerLinkActive="active-link" [routerLink]="['leaderboard']">
+        Leaderboard
+    </button>
+
+
+    <button mat-raised-button color="primary"  routerLinkActive="active-link" [routerLink]="['profile']">
+        Profile
+    </button>
+
+
+    <button mat-raised-button color="primary" (click)="logout()">
+        LOGOUT
+    </button>
+
+</div>

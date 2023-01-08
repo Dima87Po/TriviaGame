@@ -1,42 +1,43 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {
+  AngularFireAuthGuard,
+  redirectUnauthorizedTo,
+  redirectLoggedInTo,
+} from '@angular/fire/compat/auth-guard';
 
+const redirectUnauthorizedToLogin = () =>
+  redirectUnauthorizedTo(['login-home']);
+const redirectLoggedInToItems = () => redirectLoggedInTo(['dashboard']);
 
-// TODO: leaderbopard, gameplay and profile should be nested to dashboard?
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
+    redirectTo: 'dashboard',
+    pathMatch: 'full',
   },
   {
     path: 'dashboard',
+    canActivate: [AngularFireAuthGuard],
+    data: { authGuardPipe: redirectUnauthorizedToLogin },
     loadChildren: () =>
       import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
   },
   {
     path: 'login-home',
+    canActivate: [AngularFireAuthGuard],
+    data: { authGuardPipe: redirectLoggedInToItems },
     loadChildren: () =>
       import('./login-home/login.module').then((m) => m.LoginModule),
   },
   {
-    path: 'gameplay',
-    loadChildren: () => import('./play/play.module').then((m) => m.PlayModule),
-  },
-  {
-    path: 'login-home',
+    path: 'signUp',
+    canActivate: [AngularFireAuthGuard],
+    data: { authGuardPipe: redirectLoggedInToItems },
     loadChildren: () =>
       import('./login-home/login.module').then((m) => m.LoginModule),
   },
-  {
-    path: 'profile',
-    loadChildren: () =>
-      import('./profile/profile.module').then((m) => m.ProfileModule),
-  },
-  {
-    path: 'leaderboard',
-    loadChildren: () =>
-      import('./leaderboard/leaderboard.module').then((m) => m.LeaderboardModule),
-  },
+  { path: 'sign-up1', loadChildren: () => import('./login-home/sign-up1/sign-up1.module').then(m => m.SignUp1Module) },
 ];
 
 @NgModule({

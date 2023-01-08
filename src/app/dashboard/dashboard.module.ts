@@ -4,22 +4,14 @@ import { DashboardComponent } from './dashboard.component';
 import { DashboardHeaderComponent } from './dashboard-header/dashboard-header.component';
 import { UIModule } from '../shared/modules/ui/ui.module';
 import { RouterModule } from '@angular/router';
+import { routes } from './routes';
 
 @NgModule({
-  declarations: [
-    DashboardComponent,
-    DashboardHeaderComponent
-  ],
+  declarations: [DashboardComponent, DashboardHeaderComponent],
   imports: [
     CommonModule,
     UIModule,
-    RouterModule.forChild([
-      {
-        path: '',
-        component: DashboardComponent
-      },
-
-    ])
-  ]
+    RouterModule.forChild(routes),
+  ],
 })
-export class DashboardModule { }
+export class DashboardModule {}

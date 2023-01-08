@@ -1,0 +1,301 @@
+export const mockTrivias = [
+  {
+    word: 'Car',
+    options: [
+      {
+        definition: 'Flying vehicle',
+        correct: false,
+      },
+      {
+        definition:
+          'A wheeled vehicle that moves independently, with at least three wheels, powered mechanically, steered by a driver and mostly for personal transportation.',
+        correct: true,
+      },
+      {
+        definition:
+          'A wheeled vehicle, drawn by a horse or other animal; a chariot.',
+        correct: false,
+      },
+      {
+        definition: 'A floating perforated box for living fish.',
+        correct: false,
+      },
+    ],
+  },
+  {
+    word: 'Dog',
+    options: [
+      {
+        definition: 'A metal support for logs in a fireplace.',
+        correct: false,
+      },
+      {
+        definition:
+          'Any member of the Family Canidae, including domestic dogs, wolves, coyotes, jackals, foxes, and their relatives (extant and extinct); canid.',
+        correct: true,
+      },
+      {
+        definition: 'A hot dog.',
+        correct: false,
+      },
+      {
+        definition: 'A sexually aggressive man (cf. horny).',
+        correct: false,
+      },
+    ],
+  },
+  {
+    word: 'Earth',
+    options: [
+      {
+        definition: 'Soil.',
+        correct: false,
+      },
+      {
+        definition:
+          'The third planet of the Solar System; the world upon which humans live.',
+        correct: true,
+      },
+      {
+        definition:
+          'A connection electrically to the earth ((US) ground); on equipment: a terminal connected in that manner.',
+        correct: false,
+      },
+      {
+        definition:
+          'The lair (as a hole on the ground) of an animal such as fox.',
+        correct: false,
+      },
+    ],
+  },
+  {
+    word: 'Car',
+    options: [
+      {
+        definition: 'Flying vehicle',
+        correct: false,
+      },
+      {
+        definition:
+          'A wheeled vehicle that moves independently, with at least three wheels, powered mechanically, steered by a driver and mostly for personal transportation.',
+        correct: true,
+      },
+      {
+        definition:
+          'A wheeled vehicle, drawn by a horse or other animal; a chariot.',
+        correct: false,
+      },
+      {
+        definition: 'A floating perforated box for living fish.',
+        correct: false,
+      },
+    ],
+  },
+  {
+    word: 'Dog',
+    options: [
+      {
+        definition: 'A metal support for logs in a fireplace.',
+        correct: false,
+      },
+      {
+        definition:
+          'Any member of the Family Canidae, including domestic dogs, wolves, coyotes, jackals, foxes, and their relatives (extant and extinct); canid.',
+        correct: true,
+      },
+      {
+        definition: 'A hot dog.',
+        correct: false,
+      },
+      {
+        definition: 'A sexually aggressive man (cf. horny).',
+        correct: false,
+      },
+    ],
+  },
+  {
+    word: 'Earth',
+    options: [
+      {
+        definition: 'Soil.',
+        correct: false,
+      },
+      {
+        definition:
+          'The third planet of the Solar System; the world upon which humans live.',
+        correct: true,
+      },
+      {
+        definition:
+          'A connection electrically to the earth ((US) ground); on equipment: a terminal connected in that manner.',
+        correct: false,
+      },
+      {
+        definition:
+          'The lair (as a hole on the ground) of an animal such as fox.',
+        correct: false,
+      },
+    ],
+  },
+  {
+    word: 'Car',
+    options: [
+      {
+        definition: 'Flying vehicle',
+        correct: false,
+      },
+      {
+        definition:
+          'A wheeled vehicle that moves independently, with at least three wheels, powered mechanically, steered by a driver and mostly for personal transportation.',
+        correct: true,
+      },
+      {
+        definition:
+          'A wheeled vehicle, drawn by a horse or other animal; a chariot.',
+        correct: false,
+      },
+      {
+        definition: 'A floating perforated box for living fish.',
+        correct: false,
+      },
+    ],
+  },
+  {
+    word: 'Dog',
+    options: [
+      {
+        definition: 'A metal support for logs in a fireplace.',
+        correct: false,
+      },
+      {
+        definition:
+          'Any member of the Family Canidae, including domestic dogs, wolves, coyotes, jackals, foxes, and their relatives (extant and extinct); canid.',
+        correct: true,
+      },
+      {
+        definition: 'A hot dog.',
+        correct: false,
+      },
+      {
+        definition: 'A sexually aggressive man (cf. horny).',
+        correct: false,
+      },
+    ],
+  },
+  {
+    word: 'Earth',
+    options: [
+      {
+        definition: 'Soil.',
+        correct: false,
+      },
+      {
+        definition:
+          'The third planet of the Solar System; the world upon which humans live.',
+        correct: true,
+      },
+      {
+        definition:
+          'A connection electrically to the earth ((US) ground); on equipment: a terminal connected in that manner.',
+        correct: false,
+      },
+      {
+        definition:
+          'The lair (as a hole on the ground) of an animal such as fox.',
+        correct: false,
+      },
+    ],
+  },
+  {
+    word: 'Car',
+    options: [
+      {
+        definition: 'Flying vehicle',
+        correct: false,
+      },
+      {
+        definition:
+          'A wheeled vehicle that moves independently, with at least three wheels, powered mechanically, steered by a driver and mostly for personal transportation.',
+        correct: true,
+      },
+      {
+        definition:
+          'A wheeled vehicle, drawn by a horse or other animal; a chariot.',
+        correct: false,
+      },
+      {
+        definition: 'A floating perforated box for living fish.',
+        correct: false,
+      },
+    ],
+  },
+  {
+    word: 'Dog',
+    options: [
+      {
+        definition: 'A metal support for logs in a fireplace.',
+        correct: false,
+      },
+      {
+        definition:
+          'Any member of the Family Canidae, including domestic dogs, wolves, coyotes, jackals, foxes, and their relatives (extant and extinct); canid.',
+        correct: true,
+      },
+      {
+        definition: 'A hot dog.',
+        correct: false,
+      },
+      {
+        definition: 'A sexually aggressive man (cf. horny).',
+        correct: false,
+      },
+    ],
+  },
+  {
+    word: 'Earth',
+    options: [
+      {
+        definition: 'Soil.',
+        correct: false,
+      },
+      {
+        definition:
+          'The third planet of the Solar System; the world upon which humans live.',
+        correct: true,
+      },
+      {
+        definition:
+          'A connection electrically to the earth ((US) ground); on equipment: a terminal connected in that manner.',
+        correct: false,
+      },
+      {
+        definition:
+          'The lair (as a hole on the ground) of an animal such as fox.',
+        correct: false,
+      },
+    ],
+  },
+  {
+    word: 'Car',
+    options: [
+      {
+        definition: 'Flying vehicle',
+        correct: false,
+      },
+      {
+        definition:
+          'A wheeled vehicle that moves independently, with at least three wheels, powered mechanically, steered by a driver and mostly for personal transportation.',
+        correct: true,
+      },
+      {
+        definition:
+          'A wheeled vehicle, drawn by a horse or other animal; a chariot.',
+        correct: false,
+      },
+      {
+        definition: 'A floating perforated box for living fish.',
+        correct: false,
+      },
+    ],
+  }
+];

@@ -5,24 +5,28 @@ import { LoginHomeComponent } from './login-home.component';
 import { UIModule } from '../shared/modules/ui/ui.module';
 import { RouterModule } from '@angular/router';
 import { SignUpComponent } from './sign-up/sign-up.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     LoginComponent,
     LoginHomeComponent,
     SignUpComponent
+   
   ],
   imports: [
     CommonModule,
     UIModule,
-  // TODO: to separate config file
+    ReactiveFormsModule,
     RouterModule.forChild([
       {
         path: '',
-        component: LoginHomeComponent
+        component: LoginHomeComponent,
+        children: [
+          
+        ]
       }
-    ])
+    ]),
   ]
 })
 export class LoginModule { }
